@@ -1,21 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gyn.eiodmen">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
+
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="富阳爱迪曼环保公司">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Myready"
+                    android:label="调查准备">
+
+        </activity>
+
+        <activity android:name=".OtherDevice"
+            android:label="其他设备">
+            <intent-filter>
+                <action android:name="come.gyn.activitytest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TerminalDevice"
+            android:label="终端设备">
+            <intent-filter>
+                <action android:name="come.gyn.activitytest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WaterIO"
+            android:label="进出水口">
+            <intent-filter>
+                <action android:name="com.gyn.activitytest.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StructureSituation"
+            android:label="构筑物情况">
+            <intent-filter>
+                <action android:name="com.gyn.activitytest.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeviceSituation"
+            android:label="设备情况">
+            <intent-filter>
+                <action android:name="com.gyn.activitytest.ACTION_START"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
     </application>
+
 
 </manifest>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ADD8E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center"
+            android:text="其他设施检查"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pipe_network_device_text"
+        android:layout_width="156dp"
+        android:layout_height="35dp"
+        android:text="管网设施"
+        android:textSize="30dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pipe_network_text"
+            android:layout_width="82dp"
+            android:layout_height="30dp"
+            android:text="管网:"
+            android:textSize="20dp"></TextView>
+
+
+        <CheckBox
+            android:id="@+id/pipe_network_hao"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="好" />
+
+        <CheckBox
+            android:id="@+id/pipe_network_huai"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="坏" />
+
+            <CheckBox
+                android:id="@+id/pipe_network_blocking"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="堵塞" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/yinjing_text"
+            android:layout_width="82dp"
+            android:layout_height="30dp"
+            android:text="窨井:"
+            android:textSize="20dp"></TextView>
+
+
+        <CheckBox
+            android:id="@+id/yinjing_hao"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="好" />
+
+        <CheckBox
+            android:id="@+id/yinjing_huai"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="坏" />
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/yinjing_verybad_blank"
+                android:layout_width="82dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/yinjing_verybad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="淤积物严重,井编号：" />
+
+                <EditText
+                    android:id="@+id/number_manhole"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:text=""></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/road_text"
+            android:layout_width="82dp"
+            android:layout_height="30dp"
+            android:text="路面:"
+            android:textSize="20dp"></TextView>
+
+
+        <CheckBox
+            android:id="@+id/road_hao"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="好" />
+
+            <CheckBox
+                android:id="@+id/road_huai"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="坏" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/manhole_cover_text"
+            android:layout_width="82dp"
+            android:layout_height="30dp"
+            android:text="窨井盖:"
+            android:textSize="20dp"></TextView>
+
+
+        <CheckBox
+            android:id="@+id/manhole_cover_hao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="好" />
+
+        <CheckBox
+            android:id="@+id/manhole_cover_huai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="缺失" />
+
+        <CheckBox
+            android:id="@+id/manhole_cover_damaged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="破损,井编号："></CheckBox>
+
+        <EditText
+            android:id="@+id/number_cover"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:text=""></EditText>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/door_device"
+        android:layout_width="156dp"
+        android:layout_height="35dp"
+        android:text="接户设施"
+        android:textSize="30dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pipe_door"
+            android:layout_width="84dp"
+            android:layout_height="30dp"
+            android:text="接户管:"
+            android:textSize="20dp"></TextView>
+
+        <CheckBox
+            android:id="@+id/pipedoor_good"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="好" />
+
+        <CheckBox
+            android:id="@+id/pipedoor_break"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="破损" />
+
+            <CheckBox
+                android:id="@+id/pipedoor_blocking"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="堵塞" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/jing_door"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:text="接户井:"
+            android:textSize="20dp"></TextView>
+
+
+        <CheckBox
+            android:id="@+id/jingdoor_good"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="好" />
+
+        <CheckBox
+            android:id="@+id/jingdoor_break"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="破损" />
+
+            <CheckBox
+                android:id="@+id/jingdoor_verybad"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="淤积物严重" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/septic_tank"
+                android:layout_width="84dp"
+                android:layout_height="93dp"
+                android:text="用户化粪池或隔油池:"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/tank_good"
+                    android:layout_width="80dp"
+                    android:layout_height="54dp"
+                    android:checked="false"
+                    android:text="好" />
+
+                <CheckBox
+                    android:id="@+id/tank_break"
+                    android:layout_width="80dp"
+                    android:layout_height="54dp"
+                    android:checked="false"
+                    android:text="破损" />
+
+                <CheckBox
+                    android:id="@+id/tank_blocking"
+                    android:layout_width="80dp"
+                    android:layout_height="54dp"
+                    android:checked="false"
+                    android:text="堵塞" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+
+                <CheckBox
+                    android:id="@+id/tank_full"
+                    android:layout_width="113dp"
+                    android:layout_height="54dp"
+                    android:checked="false"
+                    android:text="粪便满" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kitchen_jing"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="厨房清扫井:"
+                android:textSize="20dp"></TextView>
+
+
+            <CheckBox
+                android:id="@+id/kitchen_jing_good"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="好" />
+
+            <CheckBox
+                android:id="@+id/kitchen_jing_break"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="破损" />
+
+            <CheckBox
+                android:id="@+id/kitchen_jing_verybad"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="淤积物严重" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/road"
+            android:layout_width="156dp"
+            android:layout_height="35dp"
+            android:text="道路"
+            android:textSize="30dp"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/road_good"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text="好" />
+
+        <CheckBox
+            android:id="@+id/road_break"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="破损" />
+
+            <CheckBox
+                android:id="@+id/road_set"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="沉降" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="156dp"
+        android:layout_height="35dp"
+        android:text="其他问题"
+        android:textSize="30dp"></TextView>
+    <EditText
+        android:id="@+id/other_question"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="输入问题"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/other_device_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击提交"/>
+    </LinearLayout>
+
+        </LinearLayout>  <!--内部线性框架结构-->
+   </ScrollView>
+</LinearLayout>
+

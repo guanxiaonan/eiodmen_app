@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ADD8E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center"
+            android:text="构建物情况"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"><!-- 内层线性框架-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/jishui"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:text="集水井/调节池"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_jishui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi0"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi1"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki0"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/jishui_good"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/jishui_silt"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底淤泥积物严重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki1"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/piaofu"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="表面漂浮物严重" />
+
+                <CheckBox
+                    android:id="@+id/jishui_leaking"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底漏水" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chuchen"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:text="初沉池"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_chuchen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi3"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki2"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chuchen_good"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/chuchen_silt"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底淤泥积物严重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki3"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chuchen_piaofu"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="表面漂浮物严重" />
+
+                <CheckBox
+                    android:id="@+id/chuchen_leaking"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底漏水" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki4"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chuchen_water_io"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="进出水不顺畅" />
+
+                <CheckBox
+                    android:id="@+id/other_chuchen"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/yanjian_yang"
+                    android:layout_width="138dp"
+                    android:layout_height="match_parent"
+                    android:text="厌氧池/兼氧池"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_yanjian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi5"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki5"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/yanjian_good"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/yanjian_silt"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底淤泥积物严重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki6"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/yanjian_piaofu"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="表面漂浮物严重" />
+
+                <CheckBox
+                    android:id="@+id/yanjian_leaking"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底                                                                                                                                        漏水" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki7"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/tianliao"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="填料稀少或无" />
+
+                <CheckBox
+                    android:id="@+id/yanjian_water_io"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="进出水不顺畅" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki8"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/other_yanjian"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/haoyang"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:text="好氧池"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_haoyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi7"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki9"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/haoyang_good"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/haoyang_silt"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底淤泥积物严重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki10"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/haoyang_piaofu"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="表面漂浮物严重" />
+
+                <CheckBox
+                    android:id="@+id/haoyang_leaking"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底漏水" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki11"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/haoyang_baoqi"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="爆气量异常或不均匀" />
+
+                <CheckBox
+                    android:id="@+id/haoyang_water_io"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="进出水不顺畅" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki12"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/other_haoyang"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chendian"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="沉淀池"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_chendian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi8"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi9"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki13"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chendian_good"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/chendian_silt"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底淤泥积物严重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki14"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chendian_piaofu"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="表面漂浮物严重或大量污泥上浮" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki15"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chendian_leaking"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底漏水" />
+
+                <CheckBox
+                    android:id="@+id/chendian_water_io"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="进出水不顺畅" />
+
+                <CheckBox
+                    android:id="@+id/other_chendian"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shidi"
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:text="人工湿地"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_shidi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi16"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi17"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki16"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/manshui"
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:text="漫水情况:"
+                    android:textSize="15dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_manshui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/manshui_you"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/manshui_wu"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki17"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/shidi_blocking"
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:text="是否堵塞:"
+                    android:textSize="15dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_blocking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/blocking_you"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/blocking_wu"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki18"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/shidi_plant"
+                    android:layout_width="111dp"
+                    android:layout_height="30dp"
+                    android:text="植物生长情况:"
+                    android:textSize="15dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/plant_hao"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="好" />
+
+                    <RadioButton
+                        android:id="@+id/plant_huai"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="坏" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki19"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/other_quest_shidi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="其他问题："
+                    android:textSize="15dp"></TextView>
+
+                <EditText
+                    android:id="@+id/other_quest_shidi"
+                    android:layout_width="251dp"
+                    android:layout_height="45dp"
+                    android:hint="输入问题"
+                    android:textSize="15dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chushui"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="出水井"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_chushui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi12"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi13"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki20"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chushui_good"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/chushui_silt"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底淤泥积物严重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki21"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chushui_piaofu"
+                    android:layout_width="148dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="表面漂浮物严重" />
+
+                <CheckBox
+                    android:id="@+id/chushui_leaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="池底漏水" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki22"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/chushui_water_io"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="进出水不顺畅" />
+
+                <CheckBox
+                    android:id="@+id/other_chushui"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/site_environment"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:text="终端场地环境"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_site_environment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi14"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi15"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki23"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/site_good"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="完好" />
+
+
+                <CheckBox
+                    android:id="@+id/site_general"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="一般" />
+
+                <CheckBox
+                    android:id="@+id/site_lvhua"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="绿化设施需维护养护" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki50"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+
+                <CheckBox
+                    android:id="@+id/site_bad"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="脏乱差" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fence"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:text="终端围栏"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_fence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi24"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi25"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki24"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/fence_good"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="完好" />
+
+
+                <CheckBox
+                    android:id="@+id/fence_bad"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="局部破损需维修" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki25"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/fence_conservation"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="植物围栏需养护" />
+
+                <CheckBox
+                    android:id="@+id/other_fence"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wellhead"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:text="各类井口及井盖"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_wellhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi26"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi27"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki26"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/wellhead_good"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="完好" />
+
+
+                <CheckBox
+                    android:id="@+id/wellhead_bad"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="部分井盖破损" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki27"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/wellhead_change"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="部分井盖需更换" />
+
+                <CheckBox
+                    android:id="@+id/other_wellhead"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/famen_well"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="阀门井"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_famen_well"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi28"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi29"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki28"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/famen_well_good"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/famen_well_bad"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="井底有积水" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki29"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/well_debris"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="井内杂物淤积" />
+
+                <CheckBox
+                    android:id="@+id/other_famen_well"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他问题" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mbr_fan"
+                    android:layout_width="162dp"
+                    android:layout_height="match_parent"
+                    android:text="MBR反冲洗系统"
+                    android:textSize="20dp"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/radio_mbr_fan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioi30"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="有" />
+
+                    <RadioButton
+                        android:id="@+id/radioi31"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="无" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki30"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/mbr_fan_good"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="正常" />
+
+
+                <CheckBox
+                    android:id="@+id/mbr_fan_bad"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="运行异常" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blanki31"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"></TextView>
+
+                <CheckBox
+                    android:id="@+id/mbr_fan_weixiu"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="需维修" />
+                <CheckBox
+                    android:id="@+id/mbr_fan_change"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="需维换" />
+
+                <CheckBox
+                    android:id="@+id/other_mbr_fan"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="其他" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/other_sheshi_text"
+                android:layout_width="156dp"
+                android:layout_height="35dp"
+                android:text="其他设施："
+                android:textSize="20dp"></TextView>
+            <EditText
+                android:id="@+id/other_sheshi"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="输入设施"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/structure_situation_tijiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击提交"/>
+            </LinearLayout>
+
+
+        </LinearLayout><!-- 内层线性框架-->
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ADD8E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center"
+            android:text="巡查准备"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stree_township_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="街道（乡镇）:"
+            android:textSize="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/stree_township"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/admin_village_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行政村："
+            android:textSize="25dp"></TextView>
+
+        <EditText
+            android:id="@+id/admin_village"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"></EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="巡查检查日期:"
+            android:textSize="25dp"></TextView>
+
+
+        <Button
+            android:id="@+id/input_date"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:text="点击选择日期"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/shijian"
+        android:layout_width="255dp"
+        android:layout_height="30dp"
+        android:text="时间"
+        android:textSize="20dp"></TextView>
+
+    <RadioGroup
+        android:id="@+id/ready_shijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/am"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="上午" />
+
+        <RadioButton
+            android:id="@+id/pm"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="下午" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="255dp"
+        android:layout_height="30dp"
+        android:text="天气"
+        android:textSize="20dp"></TextView>
+
+    <RadioGroup
+        android:id="@+id/ready_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/sunday"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="晴" />
+
+        <RadioButton
+            android:id="@+id/cloudy"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="阴" />
+        <RadioButton
+            android:id="@+id/rain"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="雨" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/village_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="自然村"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/village"
+            android:layout_width="274dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:textSize="20dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/terminal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="终端名称"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/terminal"
+            android:layout_width="257dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:textSize="20dp"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/people_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="巡查、检查人员"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/people"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:textSize="20dp"></EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/ready_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击提交"/>
+    </LinearLayout>
+
+</LinearLayout>
+

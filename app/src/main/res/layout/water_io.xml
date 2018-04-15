@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ADD8E6"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center"
+            android:text="进出水口检查"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/technology_text"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="处理工艺"
+            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/technology"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:text=""
+            android:textSize="20dp"></EditText>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/waterIn_text"
+        android:layout_width="96dp"
+        android:layout_height="30dp"
+        android:text="进水水量:"
+        android:textSize="20dp"></TextView>
+
+    <RadioGroup
+        android:id="@+id/waterIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/waterIn_zc"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="正常" />
+
+        <RadioButton
+            android:id="@+id/waterIn_bzc"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="不正常" />
+    </RadioGroup>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/waterOut_text"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:text="出水水量:"
+            android:textSize="20dp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/waterOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/waterOut_zc"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="正常" />
+
+            <RadioButton
+                android:id="@+id/waterOut_bzc"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="不正常" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shijian"
+        android:layout_width="255dp"
+        android:layout_height="30dp"
+        android:text="出水口"
+        android:textSize="25dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/exterior_text"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:text="外观:"
+            android:textSize="20dp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/exterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/exterior_qing"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="清" />
+
+            <RadioButton
+                android:id="@+id/exterior_zuo"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="浊" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/odor_text"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:text="臭气:"
+            android:textSize="20dp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/odor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/odor_wu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/odor_wei"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="微" />
+            <RadioButton
+                android:id="@+id/odor_you"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="有" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/water_io_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击提交"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
